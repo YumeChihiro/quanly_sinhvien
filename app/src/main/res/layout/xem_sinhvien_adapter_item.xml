@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="@drawable/rounded_background">
+
+
+
+    <!-- Nội dung chính -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <!-- Thông tin sinh viên -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtTenSinhVien"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Helo"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:paddingBottom="4dp"/>
+
+            <TextView
+                android:id="@+id/txtMssv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20 years old"
+                android:textColor="#757575"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+        <!-- Mũi tên hoặc biểu tượng -->
+        <ImageView
+            android:id="@+id/arrowIcon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_arrow_down"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+    <!-- Nội dung thêm (ẩn mặc định) -->
+    <LinearLayout
+        android:id="@+id/linearLayoutSV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:padding="16dp">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:padding="20dp"
+            android:background="@drawable/rounded_background"
+            android:elevation="2dp">
+
+            <TextView
+                android:id="@+id/field2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="3"
+                android:gravity="start|center_vertical"
+                android:padding="8dp"
+                android:text="Email:"
+                android:textColor="#424242"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/email"
+                android:textColor="@color/black"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="7"
+                android:layout_marginBottom="10dp"
+                android:ems="10"
+                android:inputType="text"
+                android:background="@drawable/edit_text_background"
+                android:padding="8dp"/>
+
+            <TextView
+                android:id="@+id/Gio"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="3"
+                android:gravity="start|center_vertical"
+                android:padding="8dp"
+                android:text="Giới tính:"
+                android:textColor="#424242"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/gioitinh"
+                android:textColor="@color/black"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="7"
+                android:layout_marginBottom="10dp"
+                android:ems="10"
+                android:inputType="text"
+                android:background="@drawable/edit_text_background"
+                android:padding="8dp"/>
+
+            <TextView
+                android:id="@+id/field3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="3"
+                android:gravity="start|center_vertical"
+                android:padding="8dp"
+                android:text="Địa chỉ:"
+                android:textColor="#424242"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/diachi"
+                android:textColor="@color/black"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="7"
+                android:layout_marginBottom="10dp"
+                android:ems="10"
+                android:inputType="text"
+                android:background="@drawable/edit_text_background"
+                android:padding="8dp"/>
+        </GridLayout>
+    </LinearLayout>
+</LinearLayout>
